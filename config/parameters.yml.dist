@@ -1,0 +1,4 @@
+parameters:
+        aws.apiKey: ""
+        aws.apiSecret: ""
+        aws.region: ""

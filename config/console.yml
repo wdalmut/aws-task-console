@@ -1,0 +1,19 @@
+services:
+    start:
+        class:  "Corley\AWS\Command\Ec2Start"
+        calls: 
+            - ["setClient", ["@ec2Client"]]
+    stop:
+        class:  "Corley\AWS\Command\Ec2Stop"
+        calls: 
+            - ["setClient", ["@ec2Client"]]
+    console:
+        class: "Symfony\Component\Console\Application"
+        calls:
+            - ["add", ["@start"]]
+            - ["add", ["@stop"]]
+    ec2Client:
+        factory_class: "Aws\Ec2\Ec2Client"
+        factory_method: "factory"
+        arguments: 
+            - {key:"%aws.apiKey%", secret:"%aws.apiSecret%", region:"%aws.region%"}
