@@ -5,6 +5,10 @@
         {
             "name": "Gianluca Arbezzano",
             "email": "gianluca.arbezzano@corley.it"
+        },
+        {
+            "name": "Walter Dal Mut",
+            "email": "walter.dalmut@corley.it"
         }
     ],
     "require": {

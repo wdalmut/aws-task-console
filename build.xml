@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="AWS" default="package">
+
+    <!-- Target: package -->
+    <target name="package">
+        <delete file="./aws-console.phar" />
+        <pharpackage
+            destfile="./aws-console.phar"
+            basedir="."
+            stub="./stub.php"
+            compression="gzip"
+            signature="sha1">
+            <fileset dir=".">
+                <include name="src/**" />
+                <include name="vendor/**" />
+                <include name="config/console.yml"/>
+            </fileset>
+        </pharpackage>
+        <chmod file="aws-console.phar" mode="0755" />
+    </target>
+</project>
