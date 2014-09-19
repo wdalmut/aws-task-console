@@ -1,0 +1,6 @@
+# AWS task console
+
+Command:
+* ec2:start <id> <id> ...
+* ec2:stop <id> <id> ...
+
