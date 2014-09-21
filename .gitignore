@@ -1,2 +1,4 @@
 vendor
-config/parameters.yml
+parameters.yml
+*.phar
+
