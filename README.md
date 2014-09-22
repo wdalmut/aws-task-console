@@ -1,4 +1,6 @@
 # AWS task console
+* Status dependencies [![Dependency Status](https://www.versioneye.com/user/projects/542035746936190b8c000128/badge.svg?style=flat)](https://www.versioneye.com/user/projects/542035746936190b8c000128)
+
 
 Just download the [phar archive](http://example.walterdalmut.com/aws-console.phar).
 
